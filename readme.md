@@ -1,6 +1,6 @@
 # fixedngrokga
 
-Tool to use for (http://fixedngrok.ga)[fixedngrok.ga].
+Tool to use for [fixedngrok.ga](http://fixedngrok.ga).
 
 Run `fixedngrok` to update your URL when ngrok is running on your machine.
 
