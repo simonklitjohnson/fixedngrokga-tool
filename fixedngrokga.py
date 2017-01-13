@@ -2,12 +2,12 @@
 import requests
 import json
 import fileinput
-
+import sys
 
 # EDIT THIS #
 
-bag_id = "YOUR_BAG_ID"
-authtoken = "YOUR_AUTH_TOKEN"
+bag_id = ""
+authtoken = ""
 
 
 class Req:
@@ -21,7 +21,7 @@ while len(json.loads(r.content.decode("utf-8"))['tunnels']) is 0:
 content = json.loads(r.content.decode("utf-8"))
 url = content['tunnels'][0]['public_url']
 print("URL is: "+url)
-r = requests.get('http://fixedngrok.ga?id='+bag_id+'&authtoken='+authtoken+'&value='+url)
+r = requests.get('http://fixedngrok.ga?bag='+bag_id+'&authtoken='+authtoken+'&value='+url)
 print("fixedngrokga bag updated.")
 
 sys.exit(0)
