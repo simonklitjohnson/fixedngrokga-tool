@@ -5,6 +5,9 @@ Tool to use for [fixedngrok.ga](http://fixedngrok.ga).
 Run `fixedngrok` to update your URL when ngrok is running on your machine.
 
 ## Installation
+
+Python3 is required along with the requests library.
+
 ### macOS and Linux
 Install the primary script with this simple one-liner:
 
